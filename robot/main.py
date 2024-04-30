@@ -15,7 +15,7 @@ ev3 = EV3Brick()
 
 # numéro de l'exemple à exécuter
 # à choisir parmi 1, 2, 3, 4, 5, 6.1, 6.2, 7, 8, 9.1, 9.2, 9.3 ou 10
-numero = 9.1
+numero = 1
 
 if numero <= 0:
     pass
