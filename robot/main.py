@@ -10,11 +10,12 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 # Création del'obet robot sous le nom ev3
 ev3 = EV3Brick()
 
+
 # Programme à exécuter
 
 # numéro de l'exemple à exécuter
 # à choisir parmi 1, 2, 3, 4, 5, 6.1, 6.2, 7, 8, 9.1, 9.2, 9.3 ou 10
-numero = 1
+numero = 9.1
 
 if numero <= 0:
     pass
@@ -142,32 +143,9 @@ elif numero == 9.1:
     # Les moteurs tournent pendant 2s à une vitesse de 500 deg/s dans le même sens (horaire)
     # le robot avance
     left_m.run(500)
-    right_m.run(500) 
-    wait(2000)
-    left_m.stop()
-    right_m.stop()
-    # Les moteurs tournent pendant 2,8s à une vitesse de 500 deg/s dans des sens différents
-    # le robot tourne sur lui-même
-    left_m.run(-500)
-    right_m.run(500) 
-    wait(2800)
-    left_m.stop()
-    right_m.stop()
-    # Les moteurs tournent pendant 2s à une vitesse de 500 deg/s dans le même sens (anti-horaire)
-    # le robot recule
-    left_m.run(-500)
     right_m.run(-500) 
     wait(2000)
-    left_m.stop()
-    right_m.stop()
-    # Le troisème moteur abaisse et remonte la barre
-    medium_m.run(-1000)
-    wait(1000)
-    medium_m.stop()
-    medium_m.run(+1000)
-    wait(1000)
-    medium_m.stop()
-
+    
 
 elif numero == 9.2:
     # Exemple 9.2
