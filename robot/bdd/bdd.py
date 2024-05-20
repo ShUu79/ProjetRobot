@@ -9,3 +9,6 @@ cursor = conn.cursor()
 def inserer_donnees(taux_nsium, distance_obstacle, position_robot):
     cursor.execute("INSERT INTO Tnisum (taux_nsium, distance_obstacle, position_robot) VALUES (?, ?, ?)", (taux_nsium, distance_obstacle, position_robot))
     conn.commit()
+
+def time():
+    cursor.execute()
