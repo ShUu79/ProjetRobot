@@ -1,17 +1,12 @@
-#!/usr/bin/env pybricks-micropython
-from pybricks.hubs import EV3Brick
-from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
-                                 InfraredSensor, UltrasonicSensor, GyroSensor)
-from pybricks.parameters import Port, Stop, Direction, Button, Color
-from pybricks.tools import wait, StopWatch, DataLog
-from pybricks.robotics import DriveBase
-from pybricks.media.ev3dev import SoundFile, ImageFile
+"""
+NSI :: Client TCP
+"""
 
 # Librairie(s)
 import socket
 
 # Adresse IP et port TCP d'écoute du serveur
-HOST = "10.229.253.8"
+HOST = "127.0.0.1"
 PORT = 1664
 
 # Création de la socket
